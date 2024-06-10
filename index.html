@@ -28,7 +28,7 @@
 
 <body class="overflow-x-hidden">
     <!-- navbar section start -->
-    <nav x-data="{ navOpen : false }" class="px-4 py-9">
+    <nav x-data="{ navOpen : false }" class="px-4 py-6 overflow-x-hidden">
         <div class="container mx-auto">
             <div class="flex items-center justify-between">
                 <!-- Header -->
@@ -66,45 +66,45 @@
                 x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
                 x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100"
                 x-transition:leave-end="opacity-0 scale-90"
-                class="fixed bottom-0 left-0 right-0 p-4 bg-white border lg:hidden z-[9999]">
-                <ul class="flex justify-between">
+                class="fixed bottom-0 left-0 right-0 p-4 bg-white border lg:hidden z-[9999] w-[100vh] overflow-x-hidden">
+                <ul class="flex gap-8 md:justify-between md:gap-0">
                     <li>
                         <button href="#" class="flex flex-col items-center justify-center gap-1 text-base text-ungu">
-                            <ion-icon name="home-outline" class="text-2xl"></ion-icon>
-                            <span class="text-base font-bold text-grey">Home</span>
+                            <ion-icon name="home-outline" class="text-xl"></ion-icon>
+                            <span class="text-sm font-bold text-grey">Home</span>
                         </button>
                     </li>
                     <li>
                         <button href="#"
                             class="flex flex-col items-center justify-center gap-1 text-base opacity-50 text-grey">
-                            <ion-icon name="albums-outline" class="text-2xl"></ion-icon>
-                            <span class="text-base font-normal">Discover</span>
+                            <ion-icon name="albums-outline" class="text-xl"></ion-icon>
+                            <span class="text-sm font-normal">Discover</span>
                         </button>
                     </li>
                     <li>
                         <button href="#"
                             class="flex flex-col items-center justify-center gap-1 text-base opacity-50 text-grey">
-                            <ion-icon name="sparkles-outline" class="text-2xl"></ion-icon>
-                            <span class="text-base font-normal">Special</span>
+                            <ion-icon name="sparkles-outline" class="text-xl"></ion-icon>
+                            <span class="text-sm font-normal">Special</span>
                         </button>
                     </li>
                     <li>
                         <button href="#"
                             class="flex flex-col items-center justify-center gap-1 text-base opacity-50 text-grey">
-                            <ion-icon name="call-outline" class="text-2xl"></ion-icon>
-                            <span class="text-base font-normal">Contact</span>
+                            <ion-icon name="call-outline" class="text-xl"></ion-icon>
+                            <span class="text-sm font-normal">Contact</span>
                         </button>
                     </li>
                     <li>
                         <button @click="open = !open" href="#"
                             class="flex flex-col items-center justify-center gap-1 text-base opacity-50 text-grey">
-                            <ion-icon name="layers-outline" class="text-2xl"></ion-icon>
-                            <span class="text-base font-normal">More</span>
+                            <ion-icon name="layers-outline" class="text-xl"></ion-icon>
+                            <span class="text-sm font-normal">More</span>
                         </button>
                     </li>
                 </ul>
                 <!-- button untuk mobile -->
-                <div x-show="open" class="absolute flex w-3/4 gap-3 -translate-x-1/2 bottom-24 left-1/2"
+                <div x-show="open" class="absolute flex w-3/4 gap-3 -translate-x-1/2 bottom-24 left-[40%]"
                     x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
                     x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
@@ -238,7 +238,7 @@
         </div>
     </section>
     <!-- service section end -->
-
+     
     <!-- destination section start -->
     <section id="destinasi" class="py-16">
         <div class="container px-4 mx-auto">
