@@ -1,0 +1,16 @@
+{
+  "name": "travel-web-tailwondcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "tailwindcss": "^3.4.3"
+  }
+}
