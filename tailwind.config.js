@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["index.html"],
+
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       fontFamily: {
         inter: ["inter"],
@@ -31,8 +35,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    // ...
-  ],
+  plugins: [require("@tailwindcss/forms")],
 };
